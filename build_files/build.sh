@@ -43,8 +43,3 @@ play-fsr() {
 play-int() {
     MANGOHUD=1 gamemoderun gamescope -W 1920 -H 1080 -f -F nearest -S integer -- "$@"
 }
-
-### Better ujust
-
-UJUST_PATH="/usr/share/ublue-os/justfile"
-sed -i 's/@{{ just }} --list/@{{ just }} --choose/g' "$UJUST_PATH"
