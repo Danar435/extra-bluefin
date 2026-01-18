@@ -8,7 +8,7 @@ alias run-vm := run-vm-qcow2
 
 [private]
 default:
-    @just --list
+    @just --choose
 
 # Check Just Syntax
 [group('Just')]
