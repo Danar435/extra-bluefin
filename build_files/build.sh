@@ -2,6 +2,10 @@
 
 set -ouex pipefail
 
+### Copy the system files over
+
+rsync -rvK /ctx/system_files/ /
+
 ### Enable repositories
 
 dnf5 -y install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
@@ -36,22 +40,3 @@ dnf5 -y copr disable lizardbyte/beta
 ### Setup sunshine
 
 setcap 'cap_sys_admin+p' $(readlink -f /usr/bin/sunshine)
-
-### Setup aliases
-
-sudo mkdir -p /usr/local/bin
-
-sudo tee /usr/local/bin/play > /dev/null <<'EOF'
-#!/usr/bin/env bash
-gamemoderun gamescope -f -- mangohud "$@"
-EOF
-
-sudo tee /usr/local/bin/play-fsr > /dev/null <<'EOF'
-#!/usr/bin/env bash
-gamemoderun gamescope -f -F fsr -- mangohud "$@"
-EOF
-
-sudo tee /usr/local/bin/play-int > /dev/null <<'EOF'
-#!/usr/bin/env bash
-gamemoderun gamescope -f -F nearest -S integer -- mangohud "$@"
-EOF

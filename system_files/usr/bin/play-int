@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+gamemoderun gamescope -f -F nearest -S integer -- mangohud "$@"

@@ -1,6 +1,6 @@
-# Layer Bluefin
+# Extra Bluefin
 
-This is a simple uBlue image that takes vanilla Bluefin DX and layers some gaming packages, that benefit from having full system access. This is an opinionated list, with Faugus Launcher as the main Proton-GE manager and game launcher.
+This is a simple uBlue image based on Bluefin DX with some extra gaming packages, that benefit from having full system access. This is an opinionated list, with Faugus Launcher as the main Proton-GE manager and game launcher.
 
 The following aliases are included to make it easy to run sandboxed games. Note: `%command%` is required after the alias to launch on Steam.
 
