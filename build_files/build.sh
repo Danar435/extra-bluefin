@@ -39,7 +39,8 @@ setcap 'cap_sys_admin+p' $(readlink -f /usr/bin/sunshine)
 
 ### Setup aliases
 
-echo 'play()     { gamemoderun gamescope -W 1920 -H 1080 -f -- mangohud "$@" }
+echo '# Setup system wide aliases
+play()     { gamemoderun gamescope -W 1920 -H 1080 -f -- mangohud "$@"; }
 play-fsr() { gamemoderun gamescope -W 1920 -H 1080 -f -F fsr -- mangohud "$@"; }
 play-int() { gamemoderun gamescope -W 1920 -H 1080 -f -F nearest -S integer -- mangohud "$@"; }
-' >> /etc/profile.d/play.sh
+' >> /etc/profile.d/aliases.sh
