@@ -17,7 +17,7 @@ cp /ctx/custom_files/flatpaks/*.preinstall /etc/flatpak/preinstall.d/
 
 # Install packages
 
-dnf5 -y install steam gamescope mangohud waydroid gcc-c++
+dnf5 -y install steam gamescope mangohud waydroid gcc-c++ wayland-utils
 
 source /ctx/build_files/copr-helpers.sh
 copr_install_isolated "faugus/faugus-launcher" faugus-launcher
