@@ -1,0 +1,20 @@
+[Flatpak Preinstall com.ranfdev.DistroShelf]
+Branch=stable
+
+[Flatpak Preinstall com.github.tchx84.Flatseal]
+Branch=stable
+
+[Flatpak Preinstall io.github.flattool.Warehouse]
+Branch=stable
+
+[Flatpak Preinstall io.github.ilya_zlobintsev.LACT]
+Branch=stable
+
+[Flatpak Preinstall io.podman_desktop.PodmanDesktop]
+Branch=stable
+
+[Flatpak Preinstall page.codeberg.libre_menu_editor.LibreMenuEditor]
+Branch=stable
+
+[Flatpak Preinstall org.gnome.World.PikaBackup]
+Branch=stable
