@@ -1,2 +1,4 @@
 #!/usr/bin/env bash
-gamemoderun gamescope -f -W 1920 -H 1080 --mangoapp -F fsr -- "$@"
+GET_RES_X=$(cat /sys/class/drm/*/modes | head -n 1 | cut -d 'x' -f 1)
+GET_RES_Y=$(cat /sys/class/drm/*/modes | head -n 1 | cut -d 'x' -f 2)
+gamemoderun gamescope -f -W "$GET_RES_X" -H "$GET_RES_Y" --mangoapp -F fsr -- "$@"

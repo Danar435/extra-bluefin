@@ -1,9 +1,0 @@
-{
-  "image-name": "extra-bluefin",
-  "image-flavor": "main",
-  "image-vendor": "kristiyan",
-  "image-ref": "ostree-image-signed:docker://ghcr.io/ublue-os/bluefin-dx",
-  "image-tag":"stable",
-  "base-image-name": "silverblue",
-  "fedora-version": "43"
-}
