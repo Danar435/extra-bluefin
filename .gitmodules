@@ -1,0 +1,12 @@
+[submodule "system_files/usr/share/gnome-shell/extensions/copyous@boerdereinar.dev"]
+	path = system_files/usr/share/gnome-shell/extensions/copyous@boerdereinar.dev
+	url = https://github.com/boerdereinar/copyous
+[submodule "system_files/usr/share/gnome-shell/extensions/just-perfection-desktop@just-perfection"]
+	path = system_files/usr/share/gnome-shell/extensions/just-perfection-desktop@just-perfection
+	url = https://gitlab.gnome.org/jrahmatzadeh/just-perfection
+[submodule "system_files/usr/share/gnome-shell/extensions/color-picker@tuberry"]
+	path = system_files/usr/share/gnome-shell/extensions/color-picker@tuberry
+	url = https://github.com/tuberry/color-picker
+[submodule "system_files/usr/share/gnome-shell/extensions/AlphabeticalAppGrid@stuarthayhurst"]
+	path = system_files/usr/share/gnome-shell/extensions/AlphabeticalAppGrid@stuarthayhurst
+	url = https://github.com/stuarthayhurst/alphabetical-grid-extension
