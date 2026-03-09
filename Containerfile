@@ -7,7 +7,7 @@ COPY system_files /system_files
 
 # Base Image
 
-FROM ghcr.io/ublue-os/bluefin-dx:stable-daily
+FROM ghcr.io/ublue-os/bluefin-dx-nvidia:stable-daily
 
 # [Im]mutable /opt
 
@@ -23,4 +23,5 @@ RUN --mount=type=bind,from=ctx,source=/,target=/ctx \
     
 # Linting
 
+RUN rm -rf /var/run && ln -s ../run /var/run
 RUN bootc container lint

@@ -1,6 +1,6 @@
 flatpak "com.discordapp.Discord"
 flatpak "com.github.zadam.trilium"
-flatpak "io.github.nokse22.minitext"
+flatpak "org.gnome.gitlab.cheywood.Buffer"
 flatpak "io.mpv.Mpv"
 flatpak "net.ankiweb.Anki"
 flatpak "net.fasterland.converseen"

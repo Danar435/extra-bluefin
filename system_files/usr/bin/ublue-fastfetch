@@ -1,2 +1,0 @@
-#!/usr/bin/bash
-/usr/bin/fastfetch --config /usr/share/ublue-os/fastfetch.jsonc --color "$(ublue-bling-fastfetch)" --logo Fedora_small

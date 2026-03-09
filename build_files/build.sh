@@ -10,18 +10,10 @@ shopt -s nullglob
 
 cp -r /ctx/system_files/* /
 
-# Install packages
+# Run build scripts
 
-dnf5 -y install gcc-c++ wayland-utils
-dnf5 -y install steam gamescope mangohud waydroid 
-
-source /ctx/build_files/copr-helpers.sh
-copr_install_isolated "faugus/faugus-launcher" faugus-launcher
-copr_install_isolated "lizardbyte/beta" sunshine
-
-# Setup sunshine
-
-setcap 'cap_sys_admin+p' $(readlink -f /usr/bin/sunshine)
+/ctx/build_files/build-extensions.sh
+/ctx/build_files/build-packages.sh
 
 # Restore default glob behavior
 

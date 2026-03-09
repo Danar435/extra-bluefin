@@ -18,3 +18,9 @@ Branch=stable
 
 [Flatpak Preinstall org.gnome.World.PikaBackup]
 Branch=stable
+
+[Flatpak Preinstall org.gnome.GHex]
+Branch=stable
+
+[Flatpak Preinstall org.libreoffice.LibreOffice]
+Branch=stable
