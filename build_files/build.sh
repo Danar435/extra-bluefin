@@ -14,6 +14,7 @@ cp -r /ctx/system_files/* /
 
 #/ctx/build_files/build-extensions.sh
 /ctx/build_files/build-packages.sh
+/ctx/build_files/build-fingerprint.sh
 
 # Restore default glob behavior
 
