@@ -4,7 +4,8 @@ set -eoux pipefail
 
 # Install packages
 
-dnf5 -y install gcc-c++ steam gamescope mangohud waydroid 
+dnf5 -y install gcc-c++ python3-devel
+dnf5 -y steam gamescope mangohud waydroid 
 
 source /ctx/build_files/copr-helpers.sh
 copr_install_isolated "faugus/faugus-launcher" faugus-launcher
