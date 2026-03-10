@@ -5,3 +5,5 @@ ldconfig
 systemd-hwdb update
 
 dnf5 -y install fprintd
+
+authselect enable-feature with-fingerprint
