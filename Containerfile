@@ -7,7 +7,7 @@ COPY system_files /system_files
 
 # Base Image
 
-FROM ghcr.io/ublue-os/bluefin-dx-nvidia:stable-daily
+FROM ghcr.io/ublue-os/bluefin-dx-nvidia-open:stable-daily
 
 # [Im]mutable /opt
 
