@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+GET_RES_X=$(cat /sys/class/drm/*/modes | head -n 1 | cut -d 'x' -f 1)
+GET_RES_Y=$(cat /sys/class/drm/*/modes | head -n 1 | cut -d 'x' -f 2)
+gamemoderun gamescope -f -W "$GET_RES_X" -H "$GET_RES_Y" --mangoapp --force-grab-cursor -- "$@"
